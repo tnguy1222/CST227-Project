@@ -1,0 +1,7 @@
+C:\Users\ThongPNguyen\source\repos\CST227ProjectConsoleApp\CST227ProjectConsoleApp\bin\Debug\CST227ProjectConsoleApp.exe.config
+C:\Users\ThongPNguyen\source\repos\CST227ProjectConsoleApp\CST227ProjectConsoleApp\bin\Debug\CST227ProjectConsoleApp.exe
+C:\Users\ThongPNguyen\source\repos\CST227ProjectConsoleApp\CST227ProjectConsoleApp\bin\Debug\CST227ProjectConsoleApp.pdb
+C:\Users\ThongPNguyen\source\repos\CST227ProjectConsoleApp\CST227ProjectConsoleApp\obj\Debug\CST227ProjectConsoleApp.csprojAssemblyReference.cache
+C:\Users\ThongPNguyen\source\repos\CST227ProjectConsoleApp\CST227ProjectConsoleApp\obj\Debug\CST227ProjectConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\ThongPNguyen\source\repos\CST227ProjectConsoleApp\CST227ProjectConsoleApp\obj\Debug\CST227ProjectConsoleApp.exe
+C:\Users\ThongPNguyen\source\repos\CST227ProjectConsoleApp\CST227ProjectConsoleApp\obj\Debug\CST227ProjectConsoleApp.pdb
