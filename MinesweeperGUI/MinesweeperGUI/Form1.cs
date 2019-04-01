@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,7 @@ namespace MinesweeperGUI
     public partial class Form1 : Form
     {
         public string level;
+
         public Form1()
         {
             InitializeComponent();
@@ -27,13 +29,17 @@ namespace MinesweeperGUI
             }else if (radioButton2.Checked)
             {
                 level = radioButton2.Text;
+        
             }else if (radioButton3.Checked)
             {
                 level = radioButton3.Text;
+                
             }
             Form2 form2 = new Form2(level);
             this.Hide();
             form2.Show();
         }
+
+        
     }
 }

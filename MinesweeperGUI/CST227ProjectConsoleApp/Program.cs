@@ -12,6 +12,7 @@ namespace CST227ProjectConsoleApp
         {
             
             MinesweeperGame game = new MinesweeperGame();
+           
             game.playGame();
             Console.ReadLine();
         }

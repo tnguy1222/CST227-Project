@@ -13,3 +13,5 @@ C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\bin\Debug\CST22
 C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\bin\Debug\CST227ProjectConsoleApp.pdb
 C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\bin\Debug\CST227ProjectConsoleApp.exe.config
 C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\MinesweeperGUI.csproj.CopyComplete
+C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\MinesweeperGUI.Form3.resources
+C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\MinesweeperGUI.Form4.resources
