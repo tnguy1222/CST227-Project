@@ -14,7 +14,9 @@ namespace MinesweeperGUI
 {
     public partial class Form1 : Form
     {
-        public string level;
+        static int Size;
+        static int Difficulty = 9;
+        static int Level;
 
         public Form1()
         {
@@ -25,17 +27,22 @@ namespace MinesweeperGUI
         {
             if (radioButton1.Checked)
             {
-                level = radioButton1.Text;
+                Size = 5;
+                Difficulty = 20;
+                Level = 1;
             }else if (radioButton2.Checked)
             {
-                level = radioButton2.Text;
-        
-            }else if (radioButton3.Checked)
-            {
-                level = radioButton3.Text;
-                
+                Size = 8;
+                Difficulty = 20;
+                Level = 2;
             }
-            Form2 form2 = new Form2(level);
+            else if (radioButton3.Checked)
+            {
+                Size = 10;
+                Difficulty = 25;
+                Level = 3;
+            }
+            Form2 form2 = new Form2(Size,Difficulty, Level);
             this.Hide();
             form2.Show();
         }

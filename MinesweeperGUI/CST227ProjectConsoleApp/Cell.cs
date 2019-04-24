@@ -14,14 +14,15 @@ namespace CST227ProjectConsoleApp
         public bool hasABomb { get; set; }
 
         public int numberNeighborBombs { get; set; }
-
-        public Cell(int RowNumber, int ColumnNumber, bool isVisited,bool hasABomb, int numberNeighborBomb)
+        public bool cellFlagged { get; set; }
+        public Cell(int r, int c, bool v,bool b, int n, bool f)
         {
-            RowNumber = -1;
-            ColumnNumber = -1;
-            isVisited = false;
-            hasABomb = false;
-            numberNeighborBombs = 0; 
+            RowNumber = r;
+            ColumnNumber = c;
+            isVisited = v;
+            hasABomb = b;
+            numberNeighborBombs = n;
+            cellFlagged = f;
         }
     }
 }

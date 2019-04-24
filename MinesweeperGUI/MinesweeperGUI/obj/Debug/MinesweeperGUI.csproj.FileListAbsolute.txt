@@ -8,10 +8,11 @@ C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\Mines
 C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\MinesweeperGUI.csproj.CoreCompileInputs.cache
 C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\MinesweeperGUI.exe
 C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\MinesweeperGUI.pdb
-C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\CST227ProjectConsoleApp.Form2.resources
-C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\bin\Debug\CST227ProjectConsoleApp.exe
 C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\bin\Debug\CST227ProjectConsoleApp.pdb
-C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\bin\Debug\CST227ProjectConsoleApp.exe.config
 C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\MinesweeperGUI.csproj.CopyComplete
 C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\MinesweeperGUI.Form3.resources
 C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\MinesweeperGUI.Form4.resources
+C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\MinesweeperGUI.Form2.resources
+C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\bin\Debug\CST227ProjectConsoleApp.dll
+C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\bin\Debug\CST227ProjectConsoleApp.dll.config
+C:\Users\ThongPNguyen\source\repos\MinesweeperGUI\MinesweeperGUI\obj\Debug\MinesweeperGUI.High_Score.resources

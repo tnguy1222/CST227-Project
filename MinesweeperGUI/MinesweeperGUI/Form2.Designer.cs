@@ -1,4 +1,4 @@
-﻿namespace CST227ProjectConsoleApp
+﻿namespace MinesweeperGUI
 {
     partial class Form2
     {
@@ -41,6 +41,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 800);
             this.panel1.TabIndex = 0;
+
             // 
             // label1
             // 
