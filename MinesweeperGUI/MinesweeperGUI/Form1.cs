@@ -28,18 +28,18 @@ namespace MinesweeperGUI
             if (radioButton1.Checked)
             {
                 Size = 5;
-                Difficulty = 20;
+                Difficulty = 15;
                 Level = 1;
             }else if (radioButton2.Checked)
             {
                 Size = 8;
-                Difficulty = 20;
+                Difficulty = 25;
                 Level = 2;
             }
             else if (radioButton3.Checked)
             {
                 Size = 10;
-                Difficulty = 25;
+                Difficulty = 45;
                 Level = 3;
             }
             Form2 form2 = new Form2(Size,Difficulty, Level);

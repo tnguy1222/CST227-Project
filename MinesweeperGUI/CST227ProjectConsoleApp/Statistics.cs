@@ -13,7 +13,7 @@ namespace MinesweeperGUI
 
         public string Name { get; set; }
         public int  Difficulty { get; set; }
-        public string Time { get; set; }
+        public int Time { get; set; }
 
         public int CompareTo(Statistics other)
         {
@@ -33,22 +33,5 @@ namespace MinesweeperGUI
             
         }
 
-        //static void Main(string[] args)
-        //{
-            
-        //    string path = @"C:\Users\ThongPNguyen\Desktop\MinesweeperScores.txt";
-            
-        //    List<string> list = File.ReadAllLines(path).ToList();
-        //    string[] scores;
-
-        //    /* var highscores = from scores in list orderby scores select scores;
-        //    for( var scores in highscores)
-        //    {
-        //        Console.WriteLine("They are {0}", scores);
-        //    }
-        //    */
-        //    Console.ReadLine();
-
-        
     }
 }

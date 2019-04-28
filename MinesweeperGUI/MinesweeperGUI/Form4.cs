@@ -33,6 +33,7 @@ namespace MinesweeperGUI
             
         }
 
+        //button1_click method to handle player name entry and wrtie it to file 
         private void button1_Click(object sender, EventArgs e)
         {
             

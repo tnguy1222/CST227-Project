@@ -31,13 +31,13 @@ namespace MinesweeperGUI
         public Form2(int Size, int Difficulty, int Level)
         {
             InitializeComponent();
-            levelChoice = Level;
+            
             
             myBoard = new Board(Size, Difficulty);
             
             btnGrid = new Button[myBoard.Size, myBoard.Size];
             myBoard.activeSomeCellswithBombs(Difficulty);
-
+            levelChoice = Level;
             myBoard.calcualateNeighbors();
             populateGrid();
             watch.Start();
@@ -60,7 +60,7 @@ namespace MinesweeperGUI
                     btnGrid[r, c].Width = buttonSize;
                     btnGrid[r, c].Height = buttonSize;
 
-                    btnGrid[r, c].Click += Grid_Button_Click;
+                    btnGrid[r, c].Click += HandleButtonClick;
                     btnGrid[r, c].MouseDown += HandlerMouseDown;
                     panel1.Controls.Add(btnGrid[r, c]);
                     btnGrid[r, c].Location = new Point(buttonSize * r, buttonSize * c);
@@ -84,6 +84,24 @@ namespace MinesweeperGUI
             }
         }
 
+        private void HandleButtonClick(object sender, EventArgs e)
+        {
+            //Button b = (Button)sender;
+            Point p = (Point)(sender as Button).Tag;
+
+            //String tag = (String) b.Tag;
+            //String [] tagParts = tag.Split('|');
+
+
+            int row, col;
+            row = p.X;
+            col = p.Y;
+            
+            PlaceTurn(row, col);
+            displayBoard(false, p);
+            clicks++;
+            //label5.Text = clicks.ToString();
+        }
         private void displayBoard(bool refreshBoard, Point p)
         {
             if (refreshBoard)
@@ -172,24 +190,7 @@ namespace MinesweeperGUI
         }
        
        
-        private void Grid_Button_Click(object sender, EventArgs e)
-        {
-            //Button b = (Button)sender;
-            Point p = (Point)(sender as Button).Tag;
-
-            //String tag = (String) b.Tag;
-            //String [] tagParts = tag.Split('|');
-
-
-            int row, col;
-            row = p.X;
-            col = p.Y;
-            
-            PlaceTurn(row, col);
-            displayBoard(false, p);
-            clicks++;
-            //label5.Text = clicks.ToString();
-        }
+        
 
         private void PlaceTurn(int rowNumber, int columnNumber)
         {

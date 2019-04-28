@@ -40,10 +40,10 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(151, 136);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(91, 29);
+            this.radioButton1.Size = new System.Drawing.Size(113, 29);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Easy";
+            this.radioButton1.Text = "Level 1";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // radioButton2
@@ -51,10 +51,10 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(151, 200);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(111, 29);
+            this.radioButton2.Size = new System.Drawing.Size(113, 29);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Normal";
+            this.radioButton2.Text = "Level 2";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton3
@@ -62,10 +62,10 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.Location = new System.Drawing.Point(151, 260);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(114, 29);
+            this.radioButton3.Size = new System.Drawing.Size(113, 29);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Difficult";
+            this.radioButton3.Text = "Level 3";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // label1

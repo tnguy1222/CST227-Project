@@ -45,10 +45,10 @@ namespace MinesweeperGUI
                 bool success = Int32.TryParse(time.Substring(0, 2), out hour);
                 
                 bool success1 = Int32.TryParse(time.Substring(3, 2), out minute);
-                bool success2 = Int32.TryParse(time.Substring(5, 2), out second);
-                MessageBox.Show("hour= " + hour + "minute = " + minute + " sec = " + second);
+                bool success2 = Int32.TryParse(time.Substring(6, 2), out second);
+               
                 int totalsec = 3600 * hour +  60 * minute + second;
-                s.Time = totalsec.ToString();
+                s.Time = totalsec;
                 
 
                 
@@ -63,33 +63,24 @@ namespace MinesweeperGUI
 
                 // create new instance of Statics object
 
-                // Statitcs s = new Statistics (name, time, diff)
+                ///Statitcs s = new Statistics (name, time, diff)
 
                 // hiscorelist.add(s);
                 highscorelist.Add(s);
 
                 // now you can sort the highscore list using linq.  sort by name, score , level etc.
 
-                // display the first 5 items in the listbox1
                 
+
             }
             // end foreach
+            //LinQ applied to sort highest score
             var highScore = from score in highscorelist orderby score select score;
-            foreach (var score in highscorelist)
+            foreach (var score in highScore)
             {
                 listBox1.Items.Add(score.ToString());
             }
         }
-
-
-
-        
-
-
-
-
-
-
 
 
     }

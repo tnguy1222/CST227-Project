@@ -45,57 +45,17 @@ namespace CST227ProjectConsoleApp
             }
         }
         
-
+        //calcualateNeighbors method to count the number of neighbor with bombs to display that number on safe cells
         public void calcualateNeighbors()
         {
-            /*for (int i = 0; i < Size; i++)
-            {
-                for (int j = 0; j < Size; j++)
-                {
-                    if (isValidate(i + 1, j) && theGrid[i + 1, j].hasABomb)
-                    {
-                        theGrid[i,j].numberNeighborBombs++;
-                    }
-                    if (isValidate(i + 1, j + 1) && theGrid[i + 1, j + 1].hasABomb)
-                    {
-                        theGrid[i, j].numberNeighborBombs++;
-                    }
-                    if (isValidate(i + 1, j - 1) && theGrid[i + 1, j - 1].hasABomb)
-                    {
-                        theGrid[i, j].numberNeighborBombs++;
-                    }
-                    if (isValidate(i, j - 1) && theGrid[i, j - 1].hasABomb)
-                    {
-                        theGrid[i, j].numberNeighborBombs++;
-                    }
-                    if (isValidate(i, j + 1) && theGrid[i, j + 1].hasABomb)
-                    {
-                        theGrid[i, j].numberNeighborBombs++;
-                    }
-                    if (isValidate(i - 1, j) && theGrid[i - 1, j].hasABomb)
-                    {
-                        theGrid[i, j].numberNeighborBombs++;
-                    }
-                    if (isValidate(i - 1, j + 1) && theGrid[i - 1, j + 1].hasABomb)
-                    {
-                        theGrid[i, j].numberNeighborBombs++;
-                    }
-                    if (isValidate(i - 1, j - 1) && theGrid[i - 1, j - 1].hasABomb)
-                    {
-                        theGrid[i, j].numberNeighborBombs++;
-
-                    }
-                }
-
-            }*/
             foreach(Cell currentcell in theGrid)
             {
                 if(currentcell.hasABomb == false)
                 {
                     currentcell.numberNeighborBombs = 0;
-                    for (int r = -1; r<=-1; r++)
+                    for (int r = -1; r<=1; r++)
                     {
-                        for(int c = -1; c<=-1; c++)
+                        for(int c = -1; c<=1; c++)
                         {
                             if (isValidate(currentcell.RowNumber + r, currentcell.ColumnNumber + c) && theGrid[currentcell.RowNumber + r, currentcell.ColumnNumber + c].hasABomb == true)
                             {
@@ -105,13 +65,14 @@ namespace CST227ProjectConsoleApp
                     }
                     if(currentcell.hasABomb == true)
                     {
-                        //currentcell.numberNeighborBombs = 9;
+                        currentcell.numberNeighborBombs = 9;
                     }
 
                 }
             }
         }
 
+        //check for out of bound error and make sure 
         public bool isValidate(int r, int c)
         {
             return (r >= 0 && r < Size && c >= 0 && c < Size);
@@ -122,7 +83,6 @@ namespace CST227ProjectConsoleApp
         {
             theGrid[x, y].isVisited = true;
             // Use floodfill recursively on all neighboring cells.
-            // the double for loop is counting squares in a 3x3 grid that looks like this
             
             for (int r = -1; r <= 1; r++)
             {
